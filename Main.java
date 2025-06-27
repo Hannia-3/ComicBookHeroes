@@ -18,7 +18,7 @@ public class Main {
         heroManager.displayHeroesAs2DArray();
 
         System.out.println("\n Insertion Sort:");
-        heroManager.insertionSortHeroesByPowee();
+        heroManager.insertionSortHeroesByPower();
         heroManager.displayHeroesAs2DArray();
 
         // this is where i remove and add a hero
