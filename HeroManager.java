@@ -58,7 +58,7 @@ public class HeroManager {
     // displaying heroes as a 2D array
     public void displayHeroesAs2DArray() {
         if (heroes.isEmpty()) {
-          System.out.println(No heroes to display");
+          System.out.println("No heroes to display");
           return;
         }
 
