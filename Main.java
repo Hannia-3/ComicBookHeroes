@@ -1,32 +1,33 @@
 public class Main {
     public static void main(String[] args) {
-        HeroManager manager = new HeroManager();
+        HeroManager heroManager = new HeroManager();
 
         // adding the heroes
-        manager.addHero(new Hero("Captain America", 75, "Avengers"));
-        manager.addHero(new Hero("Superman", 97, "Justice League"));
-        manager.addHero(new Hero("Quicksilver", 90, "X-Men"));
-        manager.addHero(new Hero("Mister Fantastic", 85, "Fantastic Four"));
+        System.out.println("---Adding Heroes---");
+        heroManager.addHero(new Hero("Captain America", 75, "Avengers"));
+        heroManager.addHero(new Hero("Superman", 97, "Justice League"));
+        heroManager.addHero(new Hero("Quicksilver", 90, "X-Men"));
+        heroManager.addHero(new Hero("Mister Fantastic", 85, "Fantastic Four"));
 
         System.out.println("\n Original List:");
-        manager.displayHeroes();
+        heroManager.displayHeroes();
 
         // sorting by their power level
         System.out.println("\n Bubble Sort:");
-        manager.bubbleSortByPowerLevel();
-        manager.displayHeroes();
+        heroManager.bubbleSortByPowerLevel();
+        heroManager.displayHeroes();
 
         System.out.println("\n Insertion Sort:");
-        manager.insertionSortByPowerLevel();
-        manager.displayHeroes();
+        heroManager.insertionSortByPowerLevel();
+        heroManager.displayHeroes();
 
         // this is where i remove and add a hero
         System.out.println("\nRemoving Quicksilver...");
         System.out.println("Adding Superman...\n");
-        manager.removeHero("Quicksilver");
-        manager.addHero(new Hero("Superman", 97, "Justice League"));
+        heroManager.removeHero("Quicksilver");
+        heroManager.addHero(new Hero("Superman", 97, "Justice League"));
 
         System.out.println("\n2D Array Display:");
-        manager.displayHeroesIn2DArrayFormat();
+        heroManager.displayHeroesIn2DArrayFormat();
     }
 }
