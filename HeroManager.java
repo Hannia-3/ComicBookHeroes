@@ -8,6 +8,10 @@ public class HeroManager {
         this.heroes = new ArrayList<>();
     }
 
+    // the list for the heroes
+    public List<Hero> getHeroes() {
+        return new ArrayList<>(heroes);
+    
     // adding heroes
     public void addHero(Hero hero) {
         heroes.add(hero);
