@@ -54,13 +54,6 @@ public class HeroManager {
         }
         System.out.println("Heroes have been sorted by their power level in ascending order using insertion sort.");
     }
-
-    // this is to display the heroes
-    public void displayHeroea() {
-        for (Hero hero ; heroes) {
-            System.out.println(hero);
-        }
-    }
     
     // displaying heroes as a 2D array
     public void displayHeroesAs2DArray() {
