@@ -10,16 +10,16 @@ public class Main {
         heroManager.addHero(new Hero("Mister Fantastic", 85, "Fantastic Four"));
 
         System.out.println("\n Original List:");
-        heroManager.displayHeroes();
+        heroManager.displayHeroesAs2DArray();
 
         // sorting by their power level
         System.out.println("\n Bubble Sort:");
-        heroManager.bubbleSortByPowerLevel();
-        heroManager.displayHeroes();
+        heroManager.bubbleSortHeroesByPower();
+        heroManager.displayHeroesAs2DArray();
 
         System.out.println("\n Insertion Sort:");
-        heroManager.insertionSortByPowerLevel();
-        heroManager.displayHeroes();
+        heroManager.insertionSortHeroesByPowee();
+        heroManager.displayHeroesAs2DArray();
 
         // this is where i remove and add a hero
         System.out.println("\nRemoving Quicksilver...");
@@ -28,6 +28,6 @@ public class Main {
         heroManager.addHero(new Hero("Superman", 97, "Justice League"));
 
         System.out.println("\n2D Array Display:");
-        heroManager.displayHeroesIn2DArrayFormat();
+        heroManager.displayHeroesAs2DArray();
     }
 }
